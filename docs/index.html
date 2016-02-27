@@ -221,13 +221,15 @@ $(document).ready(function()
                 <!-- google_ad_section_start(weight=ignore) -->
                 <div id="scrollbar3">
                     <div class="scrollbar">
-                     <div class="arrowup"></div>
+                         <div class="arrowup">
+                             <div class="arrowup-inner"></div>
+                        </div>
 
-                    <div class="track"><div class="thumb"><div class="end"></div></div></div>
+                        <div class="track"><div class="thumb"><div class="end"></div></div></div>
 
-                     <div class="arrowdown"></div>
-
-
+                         <div class="arrowdown">
+                              <div class="arrowdown-inner"></div>
+                         </div>
                     </div>
                     <div class="viewport">
                         <div class="overview">
@@ -267,7 +269,17 @@ $(document).ready(function()
                 <!--googleoff: index-->
                 <!-- google_ad_section_start(weight=ignore) -->
                 <div id="scrollbar4">
-                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                    <div class="scrollbar">
+                         <div class="arrowup">
+                             <div class="arrowup-inner"></div>
+                        </div>
+
+                        <div class="track"><div class="thumb"><div class="end"></div></div></div>
+
+                         <div class="arrowdown">
+                              <div class="arrowdown-inner"></div>
+                         </div>
+                    </div>
                     <div class="viewport">
                         <div class="overview">
                             <h3>Nonsense</h3>
@@ -367,7 +379,7 @@ $(document).ready(function()
 
                 <pre class="prettyprint"><code>
 var $scrollbar5 = $("#scrollbar5");
-$scrollbar5.tinyscrollbar();
+$scrollbar5.tinyscrollbar({arrows : false});
 
 // Some madeup function that does changes to the content
 // of the scrollbar.
